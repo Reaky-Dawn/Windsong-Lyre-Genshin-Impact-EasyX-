@@ -20,27 +20,27 @@ thread pianoLoadShift;
 void InitPiano(Piano &p)
 {
 	vector<string> files;
-	files.emplace_back("audio\\1-.mp3.wav");
-	files.emplace_back("audio\\2-.mp3.wav");
-	files.emplace_back("audio\\3-.mp3.wav");
-	files.emplace_back("audio\\4-.mp3.wav");
-	files.emplace_back("audio\\5-.mp3.wav");
-	files.emplace_back("audio\\6-.mp3.wav");
-	files.emplace_back("audio\\7-.mp3.wav");
-	files.emplace_back("audio\\1.mp3.wav");
-	files.emplace_back("audio\\2.mp3.wav");
-	files.emplace_back("audio\\3.mp3.wav");
-	files.emplace_back("audio\\4.mp3.wav");
-	files.emplace_back("audio\\5.mp3.wav");
-	files.emplace_back("audio\\6.mp3.wav");
-	files.emplace_back("audio\\7.mp3.wav");
-	files.emplace_back("audio\\1+.mp3.wav");
-	files.emplace_back("audio\\2+.mp3.wav");
-	files.emplace_back("audio\\3+.mp3.wav");
-	files.emplace_back("audio\\4+.mp3.wav");
-	files.emplace_back("audio\\5+.mp3.wav");
-	files.emplace_back("audio\\6+.mp3.wav");
-	files.emplace_back("audio\\7+.mp3.wav");
+	files.emplace_back("audio\\1-.wav");
+	files.emplace_back("audio\\2-.wav");
+	files.emplace_back("audio\\3-.wav");
+	files.emplace_back("audio\\4-.wav");
+	files.emplace_back("audio\\5-.wav");
+	files.emplace_back("audio\\6-.wav");
+	files.emplace_back("audio\\7-.wav");
+	files.emplace_back("audio\\1.wav");
+	files.emplace_back("audio\\2.wav");
+	files.emplace_back("audio\\3.wav");
+	files.emplace_back("audio\\4.wav");
+	files.emplace_back("audio\\5.wav");
+	files.emplace_back("audio\\6.wav");
+	files.emplace_back("audio\\7.wav");
+	files.emplace_back("audio\\1+.wav");
+	files.emplace_back("audio\\2+.wav");
+	files.emplace_back("audio\\3+.wav");
+	files.emplace_back("audio\\4+.wav");
+	files.emplace_back("audio\\5+.wav");
+	files.emplace_back("audio\\6+.wav");
+	files.emplace_back("audio\\7+.wav");
 
 	p.LoadNotes(files);
 
