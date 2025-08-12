@@ -1,0 +1,40 @@
+Background.jpg IMAGE  DISCARDABLE "img\\bg.jpg"
+Notes.png      IMAGE  DISCARDABLE "img\\notes.png"
+Reaky.png      IMAGE  DISCARDABLE "img\\Reaky.png"
+Sign.png       IMAGE  DISCARDABLE "img\\sign.png"
+
+Scene2.png     IMAGE  DISCARDABLE "img\\scene2.png"
+Exit.png       IMAGE  DISCARDABLE "img\\exit.png"
+Shift.png      IMAGE  DISCARDABLE "img\\shift.png"
+Message.png    IMAGE  DISCARDABLE "img\\message.png"
+
+Scene3.png     IMAGE  DISCARDABLE "img\\scene3.png"
+Autoplay.png   IMAGE  DISCARDABLE "img\\autoplay.png"
+
+
+Cursor.cur     CURSOR DISCARDABLE "img\\cursor.cur"
+
+1 VERSIONINFO
+FILEVERSION 1,0,0,0
+PRODUCTVERSION 1,0,0,0
+{
+  BLOCK "StringFileInfo"
+  {
+    BLOCK "080404E4"
+    {
+      VALUE "CompanyName", ""
+      VALUE "FileVersion", "1.0.0.0"
+      VALUE "FileDescription", "WindSong-Lyre-Genshin-Impact"
+      VALUE "InternalName", "WindSong-Lyre-Genshin-Impact"
+      VALUE "LegalCopyright", "Copyright Reaky"
+      VALUE "LegalTrademarks", ""
+      VALUE "OriginalFilename", "WindSong-Lyre-Genshin-Impact"
+      VALUE "ProductName", "WindSong-Lyre-Genshin-Impact"
+      VALUE "ProductVersion", "1.0.0.0"
+    }
+  }
+  BLOCK "VarFileInfo"
+  {
+    VALUE "Translation", 0x0804, 1252
+  }
+}
