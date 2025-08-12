@@ -5,6 +5,8 @@
  * 场景 3：用于调整自动播放的简单操作界面
  */
 
+#include <iostream>
+
 #include <conio.h>
 #include <graphics.h>
 #include <codecvt>
@@ -255,9 +257,6 @@ bool AutoPlay()
 					count++;
 			}
 
-			while (GetTickCount64() < alarm - (alarm - time) * max(0, count - 2) / count)
-				Sleep(1);
-
 			for (; autoplayScore[i] != ']'; i++)
 			{
 				alarm = GetTickCount64() + MsPerBeat / count;
@@ -271,6 +270,7 @@ bool AutoPlay()
 				while (GetTickCount64() < alarm && (autoplayScore[i + 1] != ']' || count > 2))
 					Sleep(1);
 			}
+
 			alarm = GetTickCount64() + MsPerBeat / count;
 			break;
 		}
