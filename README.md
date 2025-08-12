@@ -25,8 +25,7 @@
 
 -- 表示休止，停顿但不按下音符
 
-当然，也可以结合风物之诗琴的 midi 播放工具：【原神】自动演奏风物之诗琴的程序：
-https://github.com/luern0313/WindSong-Lyre-Genshin-Impact
+当然，也可以结合风物之诗琴的 midi 播放工具：[【原神】自动演奏风物之诗琴的程序](https://github.com/luern0313/WindSong-Lyre-Genshin-Impact)
 
 需注意的是：
 
