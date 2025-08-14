@@ -9,7 +9,7 @@
 编译环境：CLion2025.1 + EasyX for TDM-GCC 2025-01-17
 
 
-此程序一定程度上仿照了 bilibili 上的网页版模拟 WindsongLyre-Sim 同时弥补了变调等功能需在部署本地服务器的前提下才能使用的缺陷。
+此程序一定程度上仿照了 Bilibili 上的网页版模拟 WindsongLyre-Sim 同时弥补了变调等功能需在部署本地服务器的前提下才能使用的缺陷。
 
 
 ## 游戏操作
@@ -35,10 +35,10 @@
 
 ## 如何编译
 
-1. 将源代码下载到没有中文的路径下，防止 CLion 无法准确链接库文件
+1. 将源代码下载到没有中文的路径下，以免 CLion 无法准确链接库文件
 2. 按照 [CodeBus](https://codebus.cn/bestans/easyx-for-mingw) 上的教程将 EasyX 库安装到 CLion（如已安装请跳过）
 3. 打开 CLion，使用默认配置的配置（Release 或 Debug 都可）
-4. 编译后将源码路径下的 audio 文件夹复制，粘贴在与编译出的 WindsongLyre.exe 同一目录下
+4. 编译后将源码路径下的 audio 文件夹复制，粘贴在与编译出的 WindsongLyre.exe 所在目录下
 5. 双击 WindsongLyre.exe 即可运行
     * 在未安装 CLion 的电脑上运行 WindsongLyre 时，如遇 “因为 libwinpthread-1.dll 无法找到，程序无法运行”的报错，请将源代码目录下的 libwinpthread-1.dll 复制到与 exe 文件所在目录下。
 
