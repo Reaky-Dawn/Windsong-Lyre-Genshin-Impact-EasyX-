@@ -10,12 +10,13 @@
 
 ## 游戏操作
 
-
-按下对应按键以弹奏音符，键位和原神键位相同。按下非字母键，停止所有音符。画面右上角的两个按钮，分别是变调和自动播放功能。以下是自动播放乐谱的格式：
-#xxx 表示将音符间停顿改为 xxx 毫秒
-[xxx] 表示这几个音符依次按下，但平分原有停顿时间
-(xxx) 表示这几个音符同时按下
--- 表示休止，停顿但不按下音符
+按下对应按键以弹奏音符，键位和原神键位相同。按下非字母键，停止所有音符。画面右上角的两个按钮，分别是变调和自动播放功能。
+以下是自动播放乐谱的格式：
+ * #xxx 表示将音符间停顿改为 xxx 毫秒
+ * [xxx] 表示这几个音符依次按下，但平分原有停顿时间
+ * (xxx) 表示这几个音符同时按下
+ * -- 表示休止，停顿但不按下音符
+加载源代码目录下 Score 文件夹里 的 txt 以测试效果
 
 当然，也可以结合风物之诗琴的 midi 播放工具：[【原神】自动演奏风物之诗琴的程序](https://github.com/luern0313/WindSong-Lyre-Genshin-Impact)
 
@@ -31,4 +32,7 @@
 3. 打开 CLion，使用默认配置的配置（Release 或 Debug 都可）
 4. 编译后将源码路径下的 audio 文件夹复制，粘贴在与编译出的 WindsongLyre.exe 同一目录下
 5. 双击 WindsongLyre.exe 即可运行
+    * 在未安装 CLion 的电脑上运行 WindsongLyre 时，如遇 “因为 libwinpthread-1.dll 无法找到，程序无法运行”的报错，请将源代码目录下的 libwinpthread-1.dll 复制到与 exe 文件所在目录下。
+
+ * 不想编译？请前往 [Release](https://github.com/Reaky-Dawn/Windsong-Lyre-Genshin-Impact-EasyX-/releases/tag/V0.0.1) 下载可运行的发布版本
 
