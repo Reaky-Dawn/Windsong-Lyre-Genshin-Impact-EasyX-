@@ -6,7 +6,7 @@
 此程序仿制了原神的风物之诗琴。没有使用除 EasyX 以外的任何图形库或是游戏引擎。
 
 
-编译环境：CLion2025.1 + EasyX for TDM-GCC 2025-01-17
+编译环境：CLion2025.1 + EasyX_for_MinGW
 
 
 此程序一定程度上仿照了 Bilibili 上的网页版模拟 WindsongLyre-Sim 同时弥补了变调等功能需在部署本地服务器的前提下才能使用的缺陷。
@@ -22,7 +22,7 @@
  * #xxx 表示将音符间停顿改为 xxx 毫秒
  * [xxx] 表示这几个音符依次按下，但平分原有停顿时间
  * (xxx) 表示这几个音符同时按下
- * -- 表示休止，停顿但不按下音符
+ * - 表示休止，停顿但不按下音符
  * 加载源代码目录下 Score 文件夹里 的 txt 以测试效果
 
 当然，也可以结合风物之诗琴的 midi 播放工具：[【原神】自动演奏风物之诗琴的程序](https://github.com/luern0313/WindSong-Lyre-Genshin-Impact)
