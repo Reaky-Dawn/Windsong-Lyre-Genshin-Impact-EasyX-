@@ -312,7 +312,7 @@ void DrawScore()
 
 		lineSize = textOffsetX = 0;
 		p = displayBegin;
-		while (lineSize + lineScore[p].size() < maxBytePerLine)
+		while (lineSize + lineScore[p].size() < maxBytePerLine && p < lineScore.size())
 		{
 			settextcolor(p < score_ptr ? RGB(255, 165, 145) : RGB(224, 223, 209));
 			outtextxy(textX + textOffsetX, textY, lineScore[p].c_str());
@@ -324,7 +324,6 @@ void DrawScore()
 		else
 			break;
 	}
-
 // 统一处理剩余 10 行
 	settextcolor(RGB(224, 223, 209));
 	for (int i = 1; i < 11 && p < lineScore.size(); i++)
