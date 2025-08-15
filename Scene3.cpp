@@ -245,7 +245,6 @@ bool AutoPlay()
 		case '[':	// 数个键顺次按下，但平分原节拍
 		{
 			int count = 0;
-			QWORD time = GetTickCount64();
 			for (int j = 0; autoplayScore[i + j] != ']' && i + j < autoplayScore.size(); j++)
 			{
 				if (autoplayScore[i + j] == '(')
@@ -328,7 +327,7 @@ void DrawScore()
 
 // 统一处理剩余 10 行
 	settextcolor(RGB(224, 223, 209));
-	for (int i = 1; i < 11; i++)
+	for (int i = 1; i < 11 && p < lineScore.size(); i++)
 	{
 		if (i == 9)
 			settextcolor(RGB(224 * 0.8 + 62 * 0.2, 223 * 0.8 + 69 * 0.2, 209 * 0.8 + 86 * 0.2));
@@ -336,7 +335,7 @@ void DrawScore()
 			settextcolor(RGB(224 * 0.5 + 62 * 0.5, 223 * 0.5 + 69 * 0.5, 209 * 0.5 + 86 * 0.5));
 		lineSize = 0;
 		textOffsetX = 0;
-		while (lineSize + lineScore[p].size() < maxBytePerLine)
+		while (lineSize + lineScore[p].size() < maxBytePerLine && p < lineScore.size())
 		{
 			outtextxy(textX + textOffsetX, textY + i * 20, lineScore[p].c_str());
 			textOffsetX += static_cast<int>(lineScore[p].size() * 11);
