@@ -232,6 +232,10 @@ bool AutoPlay()
 
 	string autoplayScore = lineScore[score_ptr++];
 	autoplaying = score_ptr < lineScore.size();
+
+	if (!autoplaying)
+		score_ptr = 0;
+
 	int i = 0;
 	switch (autoplayScore[i])
 	{
