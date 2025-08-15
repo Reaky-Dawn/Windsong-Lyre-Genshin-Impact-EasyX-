@@ -251,7 +251,7 @@ bool AutoPlay()
 				if (autoplayScore[i + j] == '(')
 				{
 					count++;
-					for (; autoplayScore[i + j] != ')'; j++);
+					for (; autoplayScore[i + j] != ')' && i + j < autoplayScore.size(); j++);
 				}
 				if (isalpha(autoplayScore[i + j]) || autoplayScore[i + j] == '-')
 					count++;
@@ -264,7 +264,7 @@ bool AutoPlay()
 					piano.PlayNote(autoplayScore[i]);
 				if (autoplayScore[i] == '(')
 				{
-					for (; autoplayScore[i] != ')'; i++)
+					for (; autoplayScore[i] != ')' && i < autoplayScore.size(); i++)
 						piano.PlayNote(autoplayScore[i]);
 				}
 				while (GetTickCount64() < alarm && (autoplayScore[i + 1] != ']' || count > 2))
@@ -339,7 +339,7 @@ void DrawScore()
 		while (lineSize + lineScore[p].size() < maxBytePerLine)
 		{
 			outtextxy(textX + textOffsetX, textY + i * 20, lineScore[p].c_str());
-			textOffsetX += static_cast<int>(lineScore[p].size() * 10);
+			textOffsetX += static_cast<int>(lineScore[p].size() * 11);
 			lineSize += static_cast<int>(lineScore[p++].size());
 		}
 	}
